@@ -26,6 +26,32 @@ Crear una **aplicación de lista de contactos** que demuestre el manejo de array
 
 ---
 
+## 📱 Demostración Visual
+
+### 🖼️ **Capturas de la Aplicación Funcionando**
+
+<div align="center">
+
+#### **Vista Completa - Lista de Contactos**
+<img src="./screenshots/practica_3.1.jpg" alt="Práctica 3.1 - Lista completa de contactos" width="300"/>
+
+#### **Interactividad - Alerta al Presionar Contacto** 
+<img src="./screenshots/practica_3.2.jpg" alt="Práctica 3.2 - Alerta de contacto seleccionado" width="300"/>
+
+#### **Funcionalidad de Búsqueda en Tiempo Real**
+<img src="./screenshots/practica_3.3.jpg" alt="Práctica 3.3 - Búsqueda de contactos" width="300"/>
+
+</div>
+
+**Lo que puedes ver en las capturas:**
+- 📋 **Lista de 12 contactos** con datos realistas
+- 🔍 **Búsqueda en tiempo real** que filtra mientras escribes
+- 👤 **Cards de contacto** con avatar, nombre, profesión y empresa
+- ⚡ **Interactividad** con alertas al presionar cada contacto
+- 📱 **Diseño responsive** y componentes reutilizables
+
+---
+
 ## 📱 Resultado Visual
 
 ### **🏠 Pantalla Principal**
