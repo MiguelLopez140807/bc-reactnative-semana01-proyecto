@@ -1,8 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { ScrollView, View, Text, Image, StyleSheet } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { SkillCard } from './components/SkillCard'
-import { ProjectCard } from './components/ProjectCard'
+import React, { useState } from 'react';
+import { ScrollView, View, Text, Alert, TextInput } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { ContactCard } from './components/ContactCard';
+import { contactsData } from './data/contacts';
+import { Contact } from './types/Contact';
 
 // Interfaces TypeScript
 interface ContactInfo {
