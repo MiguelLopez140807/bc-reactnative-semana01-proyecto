@@ -18,6 +18,36 @@
 
 ---
 
+## 🌿 Organización del Proyecto por Ramas
+
+Este repositorio está organizado en **ramas separadas** para cada práctica del curso, permitiendo una entrega y revisión organizada:
+
+### 📋 **Estructura de Ramas:**
+
+| Rama | Descripción | Estado | Enlace Directo |
+|:-----|:-----------|:-------|:--------------|
+| **`main`** | 🏠 Proyecto principal completo con todas las funcionalidades | ✅ **Completo** | [Ver rama main](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/main) |
+| **`practica-1`** | 📱 Perfil personal básico (Header + Avatar + Contacto + Sobre Mí) | ✅ **Entregado** | [Ver práctica 1](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/practica-1) |
+| **`practica-2`** | 🔄 Segunda práctica del curso | 🚧 **Pendiente** | *Por desarrollar* |
+| **`practica-3`** | 🎯 Tercera práctica del curso | 🚧 **Pendiente** | *Por desarrollar* |
+
+### 🎯 **Ventajas de esta Organización:**
+
+- ✅ **Separación clara** de cada entrega
+- ✅ **Fácil revisión** por práctica individual
+- ✅ **Historial completo** de cada implementación
+- ✅ **Proyecto principal seguro** en la rama main
+- ✅ **Navegación sencilla** entre versiones
+
+### 📖 **Para Profesores - Cómo Revisar:**
+
+1. **Proyecto Completo:** Revisar rama `main` para ver la aplicación final
+2. **Práctica Específica:** Cambiar a la rama correspondiente (ej: `practica-1`)
+3. **Comparar Versiones:** Usar las herramientas de GitHub para comparar ramas
+4. **Código Fuente:** El archivo principal siempre es `App.tsx` en cada rama
+
+---
+
 ## 📋 Descripción del Proyecto
 
 Mi App Personal es una aplicación móvil desarrollada con React Native y Expo que muestra mi información profesional de manera elegante y moderna. La aplicación presenta mi perfil, habilidades técnicas y proyectos realizados.
@@ -84,7 +114,21 @@ Mi App Personal es una aplicación móvil desarrollada con React Native y Expo q
    pnpm add -D babel-preset-expo
    ```
 
-4. **Ejecutar la aplicación**
+4. **Cambiar a la rama deseada (opcional)**
+   ```bash
+   # Para ver el proyecto completo (por defecto)
+   git checkout main
+   
+   # Para ver una práctica específica
+   git checkout practica-1    # Ver Práctica 1
+   git checkout practica-2    # Ver Práctica 2 (cuando esté disponible)
+   git checkout practica-3    # Ver Práctica 3 (cuando esté disponible)
+   
+   # Ver todas las ramas disponibles
+   git branch -a
+   ```
+
+5. **Ejecutar la aplicación**
    ```bash
    pnpm start
    ```
@@ -93,7 +137,7 @@ Mi App Personal es una aplicación móvil desarrollada con React Native y Expo q
    expo start
    ```
 
-5. **Ver en dispositivo móvil**
+6. **Ver en dispositivo móvil**
    - Instala **Expo Go** desde Play Store o App Store
    - Escanea el código QR que aparece en la terminal
    - La aplicación se cargará automáticamente
