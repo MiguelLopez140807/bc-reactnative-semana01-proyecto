@@ -1,274 +1,284 @@
-# 📱 Mi App Personal - React Native
+# 📱 Práctica 2 - Componente Card Reutilizable
 
-## 🎬 Demostración en Video
-
-[![🎥 Ver Demostración de la App](https://img.shields.io/badge/🎥_Ver_Demostración-red?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1PhyLf5SlkAsB1U7xRy4rGVnFj-KgoI6P/view?usp=sharing)
-
-> **¡Haz clic en el botón de arriba para ver la aplicación en funcionamiento!** 📱✨
-> 
-> El video muestra todas las funcionalidades de la aplicación incluyendo navegación, interfaz de usuario y tu información personal.
-
----
-
-## 👨‍💻 Información del Desarrollador
+## 👨‍💻 Información del Estudiante
 **Desarrollado por:** Miguel Angel Lopez Leon  
-**Fecha:** 15 de octubre de 2025  
-**Título:** Técnico en Programación de Software  
-**En proceso:** Tecnólogo en Análisis y Desarrollo de Software  
+**Fecha:** 16 de octubre de 2025  
+**Curso:** React Native - Semana 01  
+**Práctica:** 2 de 3  
+**Nivel:** ⭐⭐ Intermedio  
 
 ---
 
-## 🌿 Organización del Proyecto por Ramas
+## � Objetivo de la Práctica
 
-Este repositorio está organizado en **ramas separadas** para cada práctica del curso, permitiendo una entrega y revisión organizada:
+Crear un **componente Card reutilizable** con TypeScript que acepte diferentes variantes y pueda usarse en cualquier parte de la aplicación, implementando conceptos avanzados de React Native.
 
-### 📋 **Estructura de Ramas:**
-
-| Rama | Descripción | Estado | Enlace Directo |
-|:-----|:-----------|:-------|:--------------|
-| **`main`** | 🏠 Proyecto principal completo con todas las funcionalidades | ✅ **Completo** | [Ver rama main](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/main) |
-| **`practica-1`** | 📱 Perfil personal básico (Header + Avatar + Contacto + Sobre Mí) | ✅ **Entregado** | [Ver práctica 1](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/practica-1) |
-| **`practica-2`** | 🔄 Segunda práctica del curso | 🚧 **Pendiente** | *Por desarrollar* |
-| **`practica-3`** | 🎯 Tercera práctica del curso | 🚧 **Pendiente** | *Por desarrollar* |
-
-### 🎯 **Ventajas de esta Organización:**
-
-- ✅ **Separación clara** de cada entrega
-- ✅ **Fácil revisión** por práctica individual
-- ✅ **Historial completo** de cada implementación
-- ✅ **Proyecto principal seguro** en la rama main
-- ✅ **Navegación sencilla** entre versiones
-
-### 📖 **Para Profesores - Cómo Revisar:**
-
-1. **Proyecto Completo:** Revisar rama `main` para ver la aplicación final
-2. **Práctica Específica:** Cambiar a la rama correspondiente (ej: `practica-1`)
-3. **Comparar Versiones:** Usar las herramientas de GitHub para comparar ramas
-4. **Código Fuente:** El archivo principal siempre es `App.tsx` en cada rama
+### ✨ **Conceptos Aprendidos:**
+- ✅ **Componentes personalizados** reutilizables
+- ✅ **Props con TypeScript** (interfaces)
+- ✅ **Variantes de componentes** (default, featured, compact)
+- ✅ **Props opcionales vs requeridos**
+- ✅ **Composición de componentes**
+- ✅ **Estilos condicionais** según variante
 
 ---
 
-## 📋 Descripción del Proyecto
+## � Variantes Implementadas
 
-Mi App Personal es una aplicación móvil desarrollada con React Native y Expo que muestra mi información profesional de manera elegante y moderna. La aplicación presenta mi perfil, habilidades técnicas y proyectos realizados.
+### 1. **Variante Default (básica)**
+```
+┌────────────────────────┐
+│ 📱                     │
+│                        │
+│ Título de la Card      │
+│ Descripción breve...   │
+│                        │
+│ [Botón de acción]      │
+└────────────────────────┘
+```
 
-### ✨ Características Principales
-- 📱 Diseño responsivo y moderno
-- 👤 Perfil personal completo
-- 💪 Sección de habilidades técnicas
-- 🚀 Portafolio de proyectos
-- 📞 Información de contacto
-- 🎨 Interfaz intuitiva y profesional
+### 2. **Variante Featured (destacada)**
+```
+┌────────────────────────┐
+│ ⭐ DESTACADO           │
+├────────────────────────┤
+│ 🎨                     │
+│                        │
+│ Título Destacado       │
+│ Contenido especial...  │
+│                        │
+│ [Acción Principal]     │
+└────────────────────────┘
+```
+
+### 3. **Variante Compact (compacta)**
+```
+┌──────────────────────┐
+│ 📌 Título  [Acción] │
+│ Breve descripción    │
+└──────────────────────┘
+```
 
 ---
 
-## 📸 Screenshots
+## � Resultado de la Implementación
 
-| Perfil Personal | Habilidades | Proyectos |
-|:--------------:|:-----------:|:---------:|
-| ![Perfil](./screenshots/perfil.jpg) | ![Habilidades](./screenshots/habilidades.jpg) | ![Proyectos](./screenshots/proyectos.jpg) |
+### ✨ **Características Técnicas:**
+- **TypeScript Interface** para props tipadas
+- **Valores por defecto** para props opcionales
+- **3 variantes visuales** completamente diferentes
+- **Estilos nativos** React Native
+- **Componente exportable** y reutilizable
+- **Manejo de eventos** (onPress)
 
-> **Nota:** Para tomar screenshots de la aplicación:
-> 1. Ejecuta `pnpm start` o `expo start`
-> 2. Abre la app en tu dispositivo móvil con Expo Go
-> 3. Toma capturas de pantalla de las diferentes secciones
-> 4. Guarda las imágenes en la carpeta `screenshots/` con los nombres correspondientes
+### 🎯 **Funcionalidades:**
+- **Título y descripción** configurables
+- **Iconos personalizables** con emojis
+- **Botones de acción** opcionales
+- **Estilos adaptativos** según variante
+- **Feedback visual** al presionar (activeOpacity)
+
+---
+
+## � Estructura del Código
+
+### 📋 **Interface CardProps**
+```typescript
+interface CardProps {
+  title: string              // Obligatorio
+  description: string        // Obligatorio
+  icon?: string             // Opcional (default: '📄')
+  variant?: 'default' | 'featured' | 'compact'  // Opcional (default: 'default')
+  onPress?: () => void      // Opcional
+  actionLabel?: string      // Opcional (default: 'Ver más')
+}
+```
+
+### 🎨 **Variantes de Estilo**
+- **Default:** Fondo blanco, sombras sutiles, botón azul
+- **Featured:** Fondo morado con gradiente, badge destacado
+- **Compact:** Layout horizontal, sin botón separado
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **React Native** - Framework principal
-- **Expo** - Plataforma de desarrollo
-- **TypeScript** - Tipado estático
+- **React Native** - Framework de desarrollo móvil
+- **TypeScript** - Tipado estático y interfaces
 - **React Native StyleSheet** - Estilos nativos
-- **Expo Status Bar** - Gestión de la barra de estado
-- **React Native Safe Area Context** - Áreas seguras
+- **TouchableOpacity** - Componente interactivo
+- **SafeAreaView** - Manejo de áreas seguras
 
 ---
 
 ## 📦 Instalación y Configuración
 
 ### Prerrequisitos
-- Node.js (versión 16 o superior)
-- pnpm (gestor de paquetes)
+- Node.js (versión 16+)
+- pnpm o npm
 - Expo CLI
-- Expo Go (aplicación móvil para pruebas)
+- Expo Go (app móvil)
 
-### Pasos de Instalación
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone <url-del-repositorio>
-   cd mi-app-personal
-   ```
-
-2. **Instalar dependencias**
-   ```bash
-   pnpm install
-   ```
-
-3. **Instalar dependencias específicas de Expo**
-   ```bash
-   npx expo install react-native-safe-area-context
-   pnpm add -D babel-preset-expo
-   ```
-
-4. **Cambiar a la rama deseada (opcional)**
-   ```bash
-   # Para ver el proyecto completo (por defecto)
-   git checkout main
-   
-   # Para ver una práctica específica
-   git checkout practica-1    # Ver Práctica 1
-   git checkout practica-2    # Ver Práctica 2 (cuando esté disponible)
-   git checkout practica-3    # Ver Práctica 3 (cuando esté disponible)
-   
-   # Ver todas las ramas disponibles
-   git branch -a
-   ```
-
-5. **Ejecutar la aplicación**
-   ```bash
-   pnpm start
-   ```
-   o
-   ```bash
-   expo start
-   ```
-
-6. **Ver en dispositivo móvil**
-   - Instala **Expo Go** desde Play Store o App Store
-   - Escanea el código QR que aparece en la terminal
-   - La aplicación se cargará automáticamente
-
-### Comandos Adicionales
-
+### Pasos para Ejecutar
 ```bash
-# Limpiar caché y reiniciar
-pnpm start --clear
+# Clonar el repositorio
+git clone https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto.git
+cd mi-app-personal
 
-# Abrir en Android (si tienes emulador)
-expo start --android
+# Cambiar a la rama de la práctica 2
+git checkout practica-2
 
-# Abrir en iOS (si tienes simulador en Mac)
-expo start --ios
+# Instalar dependencias
+pnpm install
+npx expo install react-native-safe-area-context
 
-# Abrir en web
-expo start --web
+# Ejecutar la aplicación
+pnpm start
 ```
 
 ---
 
-## 🔧 Decisiones Técnicas y Solución de Problemas
+## 🔧 Implementación Técnica
 
-### ⚠️ Problema con NativeWind/Tailwind CSS
-
-Durante el desarrollo inicial, se intentó implementar **NativeWind** (Tailwind CSS para React Native), pero se encontraron problemas de compatibilidad que impedían el correcto funcionamiento de la aplicación.
-
-#### Error Encontrado:
-```bash
-ERROR  index.ts: [BABEL] C:\Users\USUARIO\mi-app-personal\index.ts: .plugins is not a valid Plugin property
+### 📁 **Estructura de Archivos**
+```
+practica-2/
+├── components/
+│   └── Card.tsx           # Componente reutilizable
+├── App.tsx               # Ejemplos de uso
+├── package.json
+└── README.md
 ```
 
-#### Análisis del Problema:
-- El error ocurría en la configuración de Babel con el plugin `nativewind/babel`
-- La versión de NativeWind instalada presentaba incompatibilidades
-- El bundler de Metro no podía procesar correctamente los plugins de Babel
+### 🎯 **Componente Card.tsx**
 
-#### Solución Implementada:
-Se tomó la **decisión técnica** de migrar de **NativeWind** a **React Native StyleSheet nativo** por las siguientes razones:
+#### **Props y Defaults:**
+- **Tipado estricto** con TypeScript
+- **Valores por defecto** para props opcionales
+- **Validación de variantes** en tiempo de compilación
 
-1. **✅ Estabilidad:** StyleSheet es el sistema de estilos nativo y estable de React Native
-2. **✅ Performance:** Mejor rendimiento al no requerir procesamiento adicional de CSS
-3. **✅ Compatibilidad:** 100% compatible con todas las versiones de React Native y Expo
-4. **✅ Mantenibilidad:** Código más predecible y fácil de mantener
-5. **✅ Debugging:** Herramientas de depuración nativas más efectivas
-
-#### Configuración Final de Babel:
-```javascript
-module.exports = function (api) {
-  api.cache(true);
-  return {
-    presets: ['babel-preset-expo'],
-    plugins: [], // Sin plugins adicionales para máxima compatibilidad
-  };
-};
+#### **Renderizado Condicional:**
+```typescript
+if (variant === 'default') { /* Render default */ }
+if (variant === 'featured') { /* Render featured */ }
+if (variant === 'compact') { /* Render compact */ }
 ```
 
-### 🎨 Implementación de Estilos
-
-La migración se realizó manteniendo el **mismo diseño visual** pero utilizando:
-- **StyleSheet.create()** para definir estilos
-- **Colores hexadecimales** equivalentes a las clases de Tailwind
-- **Flexbox nativo** para layouts
-- **Sombras y bordes** nativos de React Native
+#### **Estilos Organizados:**
+- **StyleSheet separado** por variante
+- **Colores consistentes** en toda la aplicación
+- **Sombras y efectos** nativos de React Native
 
 ---
 
-## 📁 Estructura del Proyecto
+## 🎨 Paleta de Colores
 
+### **Default Card:**
+- Fondo: `#ffffff` (blanco)
+- Texto principal: `#111827` (gris oscuro)
+- Texto secundario: `#6b7280` (gris medio)
+- Botón: `#2563eb` (azul)
+
+### **Featured Card:**
+- Fondo: `#8b5cf6` (morado)
+- Badge: `#fbbf24` (amarillo)
+- Texto: `#ffffff` (blanco)
+- Botón: `#ffffff` (blanco con texto morado)
+
+### **Compact Card:**
+- Fondo: `#f9fafb` (gris claro)
+- Borde: `#e5e7eb` (gris borde)
+- Arrow: `#9ca3af` (gris flecha)
+
+---
+
+## 🧪 Ejemplos de Uso
+
+### **Uso Básico:**
+```typescript
+<Card
+  title="Mi Título"
+  description="Mi descripción"
+/>
 ```
-mi-app-personal/
-├── App.tsx                 # Componente principal
-├── babel.config.js         # Configuración de Babel
-├── package.json           # Dependencias del proyecto
-├── tsconfig.json          # Configuración de TypeScript
-├── tailwind.config.js     # Configuración de Tailwind (no utilizada)
-├── components/            # Componentes reutilizables
-│   ├── SkillCard.tsx      # Tarjeta de habilidades
-│   └── ProjectCard.tsx    # Tarjeta de proyectos
-├── screenshots/           # Capturas de pantalla
-│   ├── perfil.png
-│   ├── habilidades.png
-│   └── proyectos.png
-└── assets/               # Recursos estáticos
+
+### **Card con Acción:**
+```typescript
+<Card
+  title="React Native"
+  description="Framework móvil"
+  icon="📱"
+  actionLabel="Aprender"
+  onPress={() => Alert.alert('Presionado!')}
+/>
+```
+
+### **Card Destacada:**
+```typescript
+<Card
+  variant="featured"
+  title="Componente Especial"
+  description="Este es un componente destacado"
+  icon="⭐"
+  onPress={handlePress}
+/>
+```
+
+### **Card Compacta:**
+```typescript
+<Card
+  variant="compact"
+  title="Configuración"
+  description="Ajustes de la app"
+  icon="⚙️"
+  onPress={navigate}
+/>
 ```
 
 ---
 
-## 📱 Secciones de la Aplicación
+## 🚀 Funcionalidades Avanzadas
 
-### 🏠 Header y Perfil
-- Encabezado con gradiente azul
-- Avatar circular superpuesto
-- Nombre y título profesional
+### ✨ **Características Implementadas:**
+- **Reutilización total** del componente
+- **Props tipadas** con TypeScript
+- **Renderizado condicional** eficiente
+- **Estilos optimizados** para cada variante
+- **Feedback visual** en interacciones
+- **Exportación limpia** del componente
 
-### 📞 Información de Contacto
-- Email de contacto
-- Ubicación
-- Enlaces a GitHub
-
-### ℹ️ Sobre Mí
-- Descripción personal y profesional
-- Características personales
-
-### 💪 Mis Habilidades
-- HTML, CSS, Python
-- PHP, React, MySQL
-- Tarjetas individuales por tecnología
-
-### 🚀 Mis Proyectos
-- General Propellers Services S.A.S
-- TurboEmpleo
-- App de Perfil Personal
-- Tags de tecnologías utilizadas
+### 🎯 **Casos de Uso:**
+- **Listas de contenido** (variante default)
+- **Promociones especiales** (variante featured)
+- **Menús de navegación** (variante compact)
+- **Dashboards informativos**
+- **Galerías de productos**
 
 ---
 
-## 🤝 Contribuciones
+## 📚 Aprendizajes Clave
 
-Este es un proyecto personal, pero las sugerencias y mejoras son bienvenidas. Si encuentras algún error o tienes ideas para mejorar la aplicación, no dudes en crear un issue o pull request.
+### **TypeScript con React Native:**
+- ✅ Definición de **interfaces** para props
+- ✅ Uso de **tipos union** para variantes
+- ✅ **Props opcionales** con valores por defecto
+- ✅ **Tipado de funciones** (onPress)
+
+### **Componentes Reutilizables:**
+- ✅ **Composición** sobre herencia
+- ✅ **Props como API** del componente
+- ✅ **Renderizado condicional** eficiente
+- ✅ **Estilos modulares** y mantenibles
+
+### **Mejores Prácticas:**
+- ✅ **Separación de responsabilidades**
+- ✅ **Código autodocumentado** con comentarios
+- ✅ **Exportación explícita** de componentes
+- ✅ **Manejo de estados** opcionales
 
 ---
 
-## 📄 Licencia
-
-Este proyecto es de uso personal y educativo.
-
----
-
-## 📞 Contacto
+## 📞 Información de Contacto
 
 - **Email:** miguelsena@gmail.com
 - **GitHub:** [MiguelLopez140807](https://github.com/MiguelLopez140807)
@@ -276,17 +286,12 @@ Este proyecto es de uso personal y educativo.
 
 ---
 
-## 🏆 Reflexiones del Desarrollo
+## 🔗 Enlaces Relacionados
 
-Este proyecto representó una excelente oportunidad para:
-- Aprender React Native y Expo
-- Trabajar con TypeScript en desarrollo móvil
-- Resolver problemas técnicos complejos
-- Tomar decisiones arquitectónicas importantes
-- Documentar el proceso de desarrollo
-
-La **migración de NativeWind a StyleSheet nativo** fue una decisión que, aunque requirió trabajo adicional, resultó en una aplicación más estable, performante y mantenible.
+- **📁 Repositorio Completo:** [Ver proyecto principal](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto)
+- **🌿 Otras Prácticas:** Revisar rama `main` para ver organización completa
+- **📋 Código Fuente:** Componente principal en `components/Card.tsx`
 
 ---
 
-*Desarrollado por Miguel Angel Lopez Leon - Octubre 2025*
+*Práctica 2 completada - Componentes Reutilizables con TypeScript - Miguel Angel Lopez Leon - Octubre 2025*

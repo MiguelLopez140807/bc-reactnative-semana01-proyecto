@@ -1,166 +1,127 @@
-import { StatusBar } from 'expo-status-bar';
-import { ScrollView, View, Text, Image, StyleSheet } from 'react-native'
+import React from 'react'
+import { ScrollView, View, Text, Alert, StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { SkillCard } from './components/SkillCard'
-import { ProjectCard } from './components/ProjectCard'
+import { Card } from './components/Card'
 
-// Interfaces TypeScript
-interface ContactInfo {
-  icon: string
-  label: string
-  value: string
-}
+export default function App(): React.JSX.Element {
+  const handlePress = (title: string): void => {
+    Alert.alert('Card presionada', `Presionaste: ${title}`)
+  }
 
-interface Skill {
-  id: string
-  emoji: string
-  name: string
-  level?: string
-}
-
-interface Project {
-  id: string
-  emoji: string
-  title: string
-  description: string
-  tags: string[]
-}
-
-// Datos personales
-const personalInfo = {
-  name: 'Miguel Angel Lopez Leon',
-  title: 'Técnico en Programación de Software',
-  avatar: require('./screenshots/mi_foto.jpg'),
-  bio: 'En proceso tecnólogo en análisis y desarrollo de software. Soy muy ordenado, organizado, me gusta planear las cosas con anterioridad, puntual, compañerista, activo y respetuoso.',
-}
-
-const contacts: ContactInfo[] = [
-  { icon: '📧', label: 'Email', value: 'miguelsena@gmail.com' },
-  { icon: '📍', label: 'Ubicación', value: 'Cra 9 #9-22 sur' },
-  { icon: '🔗', label: 'GitHub', value: 'github.com/MiguelLopez140807' },
-]
-
-const skills: Skill[] = [
-  { id: '1', emoji: '🌐', name: 'HTML' },
-  { id: '2', emoji: '🎨', name: 'CSS' },
-  { id: '3', emoji: '🐍', name: 'Python' },
-  { id: '4', emoji: '�', name: 'PHP' },
-  { id: '5', emoji: '⚛️', name: 'React' },
-  { id: '6', emoji: '🗄️', name: 'MySQL' },
-]
-
-const projects: Project[] = [
-  {
-    id: '1',
-    emoji: '✈️',
-    title: 'General Propellers Services S.A.S',
-    description:
-      'Página web de ventas especializada en hélices de aviones con catálogo completo y sistema de cotizaciones',
-    tags: ['HTML', 'CSS', 'PHP', 'MySQL'],
-  },
-  {
-    id: '2',
-    emoji: '�',
-    title: 'TurboEmpleo',
-    description: 'Plataforma de búsqueda de trabajo eficiente y rápida para conectar candidatos con empleadores',
-    tags: ['React', 'PHP', 'MySQL'],
-  },
-  {
-    id: '3',
-    emoji: '👤',
-    title: 'App de Perfil Personal',
-    description: 'Aplicación móvil para mostrar información profesional con diseño moderno y responsivo',
-    tags: ['React Native', 'TypeScript'],
-  },
-]
-
-export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="dark" />
-      <ScrollView showsVerticalScrollIndicator={false}>
-        {/* HEADER */}
+      <ScrollView>
+        {/* Header */}
         <View style={styles.header}>
-          <Text style={styles.headerTitle}>MI APP PERSONAL</Text>
+          <Text style={styles.headerTitle}>
+            Componentes Card
+          </Text>
+          <Text style={styles.headerSubtitle}>
+            Ejemplos de variantes
+          </Text>
         </View>
 
-        {/* AVATAR */}
-        <View style={styles.avatarContainer}>
-          <Image
-            source={personalInfo.avatar}
-            style={styles.avatar}
+        {/* Sección: Default Cards */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>
+            Default Cards
+          </Text>
+
+          <Card
+            icon="📱"
+            title="React Native"
+            description="Framework para crear apps móviles nativas con React"
+            actionLabel="Aprender más"
+            onPress={() => handlePress('React Native')}
+          />
+
+          <Card
+            icon="💻"
+            title="TypeScript"
+            description="JavaScript con tipos estáticos para código más seguro"
+            actionLabel="Ver documentación"
+            onPress={() => handlePress('TypeScript')}
+          />
+
+          <Card
+            icon="🎨"
+            title="Componentes Reutilizables"
+            description="Crear componentes que se pueden usar en múltiples lugares"
+            actionLabel="Explorar"
+            onPress={() => handlePress('Componentes')}
           />
         </View>
 
-        {/* NOMBRE Y TÍTULO */}
-        <View style={styles.nameContainer}>
-          <Text style={styles.name}>
-            {personalInfo.name}
-          </Text>
-          <Text style={styles.title}>
-            {personalInfo.title}
-          </Text>
-        </View>
-
-        {/* CONTACTO */}
-        <View style={styles.card}>
-          {contacts.map((contact, index) => (
-            <View
-              key={index}
-              style={[
-                styles.contactItem,
-                index < contacts.length - 1 && styles.contactItemMargin
-              ]}
-            >
-              <Text style={styles.contactIcon}>{contact.icon}</Text>
-              <View style={styles.contactInfo}>
-                <Text style={styles.contactLabel}>{contact.label}</Text>
-                <Text style={styles.contactValue}>
-                  {contact.value}
-                </Text>
-              </View>
-            </View>
-          ))}
-        </View>
-
-        {/* SOBRE MÍ */}
-        <View style={styles.card}>
-          <Text style={styles.sectionTitle}>Sobre Mí</Text>
-          <Text style={styles.bioText}>
-            {personalInfo.bio}
-          </Text>
-        </View>
-
-        {/* SEPARADOR */}
-        <View style={styles.separator} />
-
-        {/* MIS HABILIDADES */}
+        {/* Sección: Featured Cards */}
         <View style={styles.section}>
-          <Text style={styles.mainSectionTitle}>
-            💪 Mis Habilidades
+          <Text style={styles.sectionTitle}>
+            Featured Cards
           </Text>
-          {skills.map((skill) => (
-            <SkillCard key={skill.id} emoji={skill.emoji} name={skill.name} />
-          ))}
+
+          <Card
+            variant="featured"
+            icon="🚀"
+            title="Expo Framework"
+            description="La mejor manera de construir apps con React Native"
+            actionLabel="Comenzar ahora"
+            onPress={() => handlePress('Expo')}
+          />
+
+          <Card
+            variant="featured"
+            icon="⭐"
+            title="Props con TypeScript"
+            description="Aprende a crear interfaces para componentes reutilizables"
+            actionLabel="Practicar"
+            onPress={() => handlePress('TypeScript Props')}
+          />
         </View>
 
-        {/* SEPARADOR */}
-        <View style={styles.separator} />
-
-        {/* MIS PROYECTOS */}
-        <View style={styles.lastSection}>
-          <Text style={styles.mainSectionTitle}>
-            🚀 Mis Proyectos
+        {/* Sección: Compact Cards */}
+        <View style={[styles.section, styles.lastSection]}>
+          <Text style={styles.sectionTitle}>
+            Compact Cards
           </Text>
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              emoji={project.emoji}
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
-            />
-          ))}
+
+          <Card
+            variant="compact"
+            icon="⚙️"
+            title="Configuración"
+            description="Ajusta las preferencias de tu aplicación"
+            onPress={() => handlePress('Configuración')}
+          />
+
+          <Card
+            variant="compact"
+            icon="👤"
+            title="Perfil"
+            description="Ver y editar tu información personal"
+            onPress={() => handlePress('Perfil')}
+          />
+
+          <Card
+            variant="compact"
+            icon="📊"
+            title="Estadísticas"
+            description="Revisa tus métricas y progreso"
+            onPress={() => handlePress('Estadísticas')}
+          />
+
+          <Card
+            variant="compact"
+            icon="🎯"
+            title="Objetivos"
+            description="Define y seguimiento de tus metas"
+            onPress={() => handlePress('Objetivos')}
+          />
+
+          <Card
+            variant="compact"
+            icon="📚"
+            title="Biblioteca"
+            description="Explora recursos y documentación"
+            onPress={() => handlePress('Biblioteca')}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -170,113 +131,35 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f9fafb',
+    backgroundColor: '#f3f4f6',
   },
   header: {
-    height: 192,
-    backgroundColor: '#3b82f6',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    paddingBottom: 70,
+    backgroundColor: 'white',
+    padding: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#e5e7eb',
   },
   headerTitle: {
-    color: 'white',
-    fontSize: 30,
-    fontWeight: 'bold',
-  },
-  avatarContainer: {
-    alignItems: 'center',
-    marginTop: -64,
-  },
-  avatar: {
-    width: 128,
-    height: 128,
-    borderRadius: 64,
-    borderWidth: 4,
-    borderColor: 'white',
-  },
-  nameContainer: {
-    alignItems: 'center',
-    marginTop: 16,
-    paddingHorizontal: 20,
-  },
-  name: {
     fontSize: 30,
     fontWeight: 'bold',
     color: '#111827',
-    textAlign: 'center',
   },
-  title: {
-    fontSize: 18,
+  headerSubtitle: {
+    fontSize: 16,
     color: '#6b7280',
     marginTop: 4,
-    textAlign: 'center',
-  },
-  card: {
-    marginHorizontal: 20,
-    marginTop: 24,
-    backgroundColor: 'white',
-    borderRadius: 12,
-    padding: 20,
-    borderWidth: 1,
-    borderColor: '#e5e7eb',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
-  },
-  contactItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  contactItemMargin: {
-    marginBottom: 16,
-  },
-  contactIcon: {
-    fontSize: 24,
-    marginRight: 12,
-  },
-  contactInfo: {
-    flex: 1,
-  },
-  contactLabel: {
-    fontSize: 14,
-    color: '#6b7280',
-  },
-  contactValue: {
-    fontSize: 16,
-    color: '#111827',
-    fontWeight: '500',
-  },
-  sectionTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#111827',
-    marginBottom: 12,
-  },
-  bioText: {
-    fontSize: 16,
-    color: '#6b7280',
-    lineHeight: 24,
-  },
-  separator: {
-    height: 1,
-    backgroundColor: '#d1d5db',
-    marginHorizontal: 20,
-    marginVertical: 32,
   },
   section: {
-    marginHorizontal: 20,
+    marginTop: 20,
   },
   lastSection: {
-    marginHorizontal: 20,
-    marginBottom: 40,
+    marginBottom: 32,
   },
-  mainSectionTitle: {
-    fontSize: 24,
+  sectionTitle: {
+    fontSize: 18,
     fontWeight: 'bold',
     color: '#111827',
-    marginBottom: 16,
+    paddingHorizontal: 20,
+    marginBottom: 8,
   },
 });
