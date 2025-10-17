@@ -1,248 +1,169 @@
-# 📱 Mi App Personal - React Native
+# 📱 Práctica 1 - Perfil Personal Básico
 
-## 🎬 Demostración en Video
-
-[![🎥 Ver Demostración de la App](https://img.shields.io/badge/🎥_Ver_Demostración-red?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1PhyLf5SlkAsB1U7xRy4rGVnFj-KgoI6P/view?usp=sharing)
-
-> **¡Haz clic en el botón de arriba para ver la aplicación en funcionamiento!** 📱✨
-> 
-> El video muestra todas las funcionalidades de la aplicación incluyendo navegación, interfaz de usuario y tu información personal.
-
----
-
-## 👨‍💻 Información del Desarrollador
+## 👨‍💻 Información del Estudiante
 **Desarrollado por:** Miguel Angel Lopez Leon  
-**Fecha:** 15 de octubre de 2025  
-**Título:** Técnico en Programación de Software  
-**En proceso:** Tecnólogo en Análisis y Desarrollo de Software  
+**Fecha:** 16 de octubre de 2025  
+**Curso:** React Native - Semana 01  
+**Práctica:** 1 de 3  
 
 ---
 
-## 📋 Descripción del Proyecto
+## 🎯 Objetivo de la Práctica
 
-Mi App Personal es una aplicación móvil desarrollada con React Native y Expo que muestra mi información profesional de manera elegante y moderna. La aplicación presenta mi perfil, habilidades técnicas y proyectos realizados.
+Crear una aplicación de **perfil personal básico** utilizando React Native y Expo, implementando las siguientes secciones:
 
-### ✨ Características Principales
-- 📱 Diseño responsivo y moderno
-- 👤 Perfil personal completo
-- 💪 Sección de habilidades técnicas
-- 🚀 Portafolio de proyectos
-- 📞 Información de contacto
-- 🎨 Interfaz intuitiva y profesional
+- ✅ **Header azul** con título "Mi Perfil"
+- ✅ **Avatar circular** con foto personal
+- ✅ **Información personal** (nombre y título profesional)
+- ✅ **Datos de contacto** (email, teléfono, ubicación)
+- ✅ **Sección "Sobre Mí"** con biografía personal
 
 ---
 
-## 📸 Screenshots
+## 📱 Demostración Visual
 
-| Perfil Personal | Habilidades | Proyectos |
-|:--------------:|:-----------:|:---------:|
-| ![Perfil](./screenshots/perfil.jpg) | ![Habilidades](./screenshots/habilidades.jpg) | ![Proyectos](./screenshots/proyectos.jpg) |
+### 🖼️ **Resultado Final en Dispositivo Móvil**
 
-> **Nota:** Para tomar screenshots de la aplicación:
-> 1. Ejecuta `pnpm start` o `expo start`
-> 2. Abre la app en tu dispositivo móvil con Expo Go
-> 3. Toma capturas de pantalla de las diferentes secciones
-> 4. Guarda las imágenes en la carpeta `screenshots/` con los nombres correspondientes
+<div align="center">
+  <img src="./screenshots/practica_1.jpg" alt="Práctica 1 - Perfil Personal en dispositivo móvil" width="300"/>
+  
+  <p><em>Captura de pantalla de la aplicación funcionando en dispositivo real</em></p>
+</div>
+
+**Lo que puedes ver en la captura:**
+- 🎨 **Header azul** con título "Mi Perfil" bien posicionado
+- 👤 **Avatar circular** con foto personal real superpuesto
+- 📝 **Información personal** claramente visible
+- 📞 **Datos de contacto** organizados con iconos
+- 💭 **Sección "Sobre Mí"** con biografía completa
+- 🎯 **Diseño limpio** y profesional
+
+---
+
+## 📱 Resultado de la Implementación
+
+### ✨ **Características Implementadas:**
+- **Diseño responsive** con React Native
+- **Estilos nativos** para mejor compatibilidad
+- **Información personal real** del estudiante
+- **Interfaz limpia y profesional**
+
+### 🎨 **Estructura Visual:**
+1. **Header azul** - Fondo con título centrado
+2. **Avatar superpuesto** - Foto circular con borde blanco
+3. **Datos personales** - Nombre y título profesional
+4. **Tarjeta de contacto** - Email, teléfono y ubicación
+5. **Biografía** - Sección "Sobre Mí" con información personal
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **React Native** - Framework principal
-- **Expo** - Plataforma de desarrollo
+- **React Native** - Framework de desarrollo móvil
+- **Expo** - Plataforma de desarrollo y testing
 - **TypeScript** - Tipado estático
-- **React Native StyleSheet** - Estilos nativos
-- **Expo Status Bar** - Gestión de la barra de estado
-- **React Native Safe Area Context** - Áreas seguras
+- **StyleSheet** - Estilos nativos de React Native
+- **React Native Safe Area Context** - Manejo de áreas seguras
 
 ---
 
-## 📦 Instalación y Configuración
+## 📦 Instalación y Ejecución
 
 ### Prerrequisitos
-- Node.js (versión 16 o superior)
-- pnpm (gestor de paquetes)
+- Node.js (versión 16+)
+- pnpm o npm
 - Expo CLI
-- Expo Go (aplicación móvil para pruebas)
+- Expo Go (app móvil)
 
-### Pasos de Instalación
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone <url-del-repositorio>
-   cd mi-app-personal
-   ```
-
-2. **Instalar dependencias**
-   ```bash
-   pnpm install
-   ```
-
-3. **Instalar dependencias específicas de Expo**
-   ```bash
-   npx expo install react-native-safe-area-context
-   pnpm add -D babel-preset-expo
-   ```
-
-4. **Ejecutar la aplicación**
-   ```bash
-   pnpm start
-   ```
-   o
-   ```bash
-   expo start
-   ```
-
-5. **Ver en dispositivo móvil**
-   - Instala **Expo Go** desde Play Store o App Store
-   - Escanea el código QR que aparece en la terminal
-   - La aplicación se cargará automáticamente
-
-### Comandos Adicionales
-
+### Pasos para Ejecutar
 ```bash
-# Limpiar caché y reiniciar
-pnpm start --clear
+# Clonar y navegar al proyecto
+git clone https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto.git
+cd mi-app-personal
 
-# Abrir en Android (si tienes emulador)
-expo start --android
+# Cambiar a la rama de la práctica 1
+git checkout practica-1
 
-# Abrir en iOS (si tienes simulador en Mac)
-expo start --ios
+# Instalar dependencias
+pnpm install
+npx expo install react-native-safe-area-context
 
-# Abrir en web
-expo start --web
+# Ejecutar la aplicación
+pnpm start
+
+# Escanear QR con Expo Go para ver en dispositivo móvil
 ```
 
 ---
 
-## 🔧 Decisiones Técnicas y Solución de Problemas
+## 🔧 Decisión Técnica Importante
 
-### ⚠️ Problema con NativeWind/Tailwind CSS
+### ⚠️ **Migración de Tailwind CSS a Estilos Nativos**
 
-Durante el desarrollo inicial, se intentó implementar **NativeWind** (Tailwind CSS para React Native), pero se encontraron problemas de compatibilidad que impedían el correcto funcionamiento de la aplicación.
+**Problema encontrado:**
+Durante el desarrollo inicial se intentó usar NativeWind (Tailwind para React Native), pero se presentaron errores de compatibilidad con Babel:
 
-#### Error Encontrado:
-```bash
-ERROR  index.ts: [BABEL] C:\Users\USUARIO\mi-app-personal\index.ts: .plugins is not a valid Plugin property
+```
+ERROR [BABEL] .plugins is not a valid Plugin property
 ```
 
-#### Análisis del Problema:
-- El error ocurría en la configuración de Babel con el plugin `nativewind/babel`
-- La versión de NativeWind instalada presentaba incompatibilidades
-- El bundler de Metro no podía procesar correctamente los plugins de Babel
+**Solución implementada:**
+Se migró completamente a **React Native StyleSheet** por las siguientes razones:
 
-#### Solución Implementada:
-Se tomó la **decisión técnica** de migrar de **NativeWind** a **React Native StyleSheet nativo** por las siguientes razones:
+- ✅ **Mayor estabilidad** y compatibilidad
+- ✅ **Mejor rendimiento** sin procesamiento adicional
+- ✅ **Debugging más efectivo** con herramientas nativas
+- ✅ **Código más predecible** y mantenible
 
-1. **✅ Estabilidad:** StyleSheet es el sistema de estilos nativo y estable de React Native
-2. **✅ Performance:** Mejor rendimiento al no requerir procesamiento adicional de CSS
-3. **✅ Compatibilidad:** 100% compatible con todas las versiones de React Native y Expo
-4. **✅ Mantenibilidad:** Código más predecible y fácil de mantener
-5. **✅ Debugging:** Herramientas de depuración nativas más efectivas
-
-#### Configuración Final de Babel:
-```javascript
-module.exports = function (api) {
-  api.cache(true);
-  return {
-    presets: ['babel-preset-expo'],
-    plugins: [], // Sin plugins adicionales para máxima compatibilidad
-  };
-};
-```
-
-### 🎨 Implementación de Estilos
-
-La migración se realizó manteniendo el **mismo diseño visual** pero utilizando:
-- **StyleSheet.create()** para definir estilos
-- **Colores hexadecimales** equivalentes a las clases de Tailwind
-- **Flexbox nativo** para layouts
-- **Sombras y bordes** nativos de React Native
+Esta decisión técnica resultó en una aplicación más robusta y profesional.
 
 ---
 
 ## 📁 Estructura del Proyecto
 
 ```
-mi-app-personal/
-├── App.tsx                 # Componente principal
-├── babel.config.js         # Configuración de Babel
-├── package.json           # Dependencias del proyecto
-├── tsconfig.json          # Configuración de TypeScript
-├── tailwind.config.js     # Configuración de Tailwind (no utilizada)
-├── components/            # Componentes reutilizables
-│   ├── SkillCard.tsx      # Tarjeta de habilidades
-│   └── ProjectCard.tsx    # Tarjeta de proyectos
-├── screenshots/           # Capturas de pantalla
-│   ├── perfil.png
-│   ├── habilidades.png
-│   └── proyectos.png
-└── assets/               # Recursos estáticos
+practica-1/
+├── App.tsx              # Componente principal de la práctica
+├── package.json         # Dependencias del proyecto
+├── babel.config.js      # Configuración de Babel
+├── screenshots/         # Recursos de imágenes
+│   └── mi_foto.jpg      # Foto personal del estudiante
+└── README.md           # Esta documentación
 ```
 
 ---
 
-## 📱 Secciones de la Aplicación
+## 💡 Características del Código
 
-### 🏠 Header y Perfil
-- Encabezado con gradiente azul
-- Avatar circular superpuesto
-- Nombre y título profesional
+### 📋 **App.tsx - Componente Principal**
+- **Estructura simple** y clara
+- **Estilos organizados** en StyleSheet
+- **Información personalizada** del estudiante
+- **Diseño responsive** y profesional
 
-### 📞 Información de Contacto
-- Email de contacto
-- Ubicación
-- Enlaces a GitHub
-
-### ℹ️ Sobre Mí
-- Descripción personal y profesional
-- Características personales
-
-### 💪 Mis Habilidades
-- HTML, CSS, Python
-- PHP, React, MySQL
-- Tarjetas individuales por tecnología
-
-### 🚀 Mis Proyectos
-- General Propellers Services S.A.S
-- TurboEmpleo
-- App de Perfil Personal
-- Tags de tecnologías utilizadas
+### 🎨 **Estilos Implementados**
+- **Header:** Fondo azul (#2563eb) con título blanco
+- **Avatar:** Imagen circular 128x128px con borde blanco
+- **Tarjetas:** Fondo blanco con sombras y bordes redondeados
+- **Tipografía:** Tamaños y pesos consistentes
+- **Colores:** Paleta profesional en grises y azules
 
 ---
 
-## 🤝 Contribuciones
-
-Este es un proyecto personal, pero las sugerencias y mejoras son bienvenidas. Si encuentras algún error o tienes ideas para mejorar la aplicación, no dudes en crear un issue o pull request.
-
----
-
-## 📄 Licencia
-
-Este proyecto es de uso personal y educativo.
-
----
-
-## 📞 Contacto
+## 📞 Información de Contacto
 
 - **Email:** miguelsena@gmail.com
-- **GitHub:** [MiguelLopez140807](https://github.com/MiguelLopez140807)
 - **Ubicación:** Cra 9 #9-22 sur
+- **GitHub:** [MiguelLopez140807](https://github.com/MiguelLopez140807)
 
 ---
 
-## 🏆 Reflexiones del Desarrollo
+## 🔗 Enlaces Relacionados
 
-Este proyecto representó una excelente oportunidad para:
-- Aprender React Native y Expo
-- Trabajar con TypeScript en desarrollo móvil
-- Resolver problemas técnicos complejos
-- Tomar decisiones arquitectónicas importantes
-- Documentar el proceso de desarrollo
-
-La **migración de NativeWind a StyleSheet nativo** fue una decisión que, aunque requirió trabajo adicional, resultó en una aplicación más estable, performante y mantenible.
+- **📁 Repositorio Completo:** [Ver proyecto principal](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto)
+- **🌿 Otras Prácticas:** Revisar rama `main` para ver organización completa
+- **📋 Código Fuente:** El archivo principal es `App.tsx`
 
 ---
 
-*Desarrollado por Miguel Angel Lopez Leon - Octubre 2025*
+*Práctica 1 completada - Miguel Angel Lopez Leon - Octubre 2025*
