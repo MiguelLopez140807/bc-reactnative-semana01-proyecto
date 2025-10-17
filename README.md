@@ -23,7 +23,32 @@ Crear un **componente Card reutilizable** con TypeScript que acepte diferentes v
 
 ---
 
-## � Variantes Implementadas
+## 📱 Demostración Visual
+
+### 🖼️ **Capturas de las 3 Variantes Implementadas**
+
+<div align="center">
+
+#### **Variante Default - Cards Básicas**
+<img src="./screenshots/practica_2.1.jpg" alt="Práctica 2.1 - Variante Default" width="300"/>
+
+#### **Variante Featured - Cards Destacadas** 
+<img src="./screenshots/practica_2.2.jpg" alt="Práctica 2.2 - Variante Featured" width="300"/>
+
+#### **Variante Compact - Cards Compactas**
+<img src="./screenshots/practica_2.3.jpg" alt="Práctica 2.3 - Variante Compact" width="300"/>
+
+</div>
+
+**Lo que puedes ver en las capturas:**
+- 🎨 **Diseño diferente** para cada variante
+- 📱 **Estilos nativos** React Native aplicados
+- 🔘 **Interactividad** con botones funcionales
+- ⚡ **Componentización** reutilizable demostrada
+
+---
+
+## 🔧 Variantes Implementadas
 
 ### 1. **Variante Default (básica)**
 ```
