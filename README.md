@@ -12,7 +12,7 @@
 
 ## 👨‍💻 Información del Desarrollador
 **Desarrollado por:** Miguel Angel Lopez Leon  
-**Fecha:** 15 de octubre de 2025  
+**Fecha:** 16 de octubre de 2025  
 **Título:** Técnico en Programación de Software  
 **En proceso:** Tecnólogo en Análisis y Desarrollo de Software  
 
@@ -28,7 +28,7 @@ Este repositorio está organizado en **ramas separadas** para cada práctica del
 |:-----|:-----------|:-------|:--------------|
 | **`main`** | 🏠 Proyecto principal completo con todas las funcionalidades | ✅ **Completo** | [Ver rama main](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/main) |
 | **`practica-1`** | 📱 Perfil personal básico (Header + Avatar + Contacto + Sobre Mí) | ✅ **Entregado** | [Ver práctica 1](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/practica-1) |
-| **`practica-2`** | 🔄 Segunda práctica del curso | 🚧 **Pendiente** | *Por desarrollar* |
+| **`practica-2`** | 🔄 Componente Card reutilizable con TypeScript y 3 variantes | ✅ **Entregado** | [Ver práctica 2](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/practica-2) |
 | **`practica-3`** | 🎯 Tercera práctica del curso | 🚧 **Pendiente** | *Por desarrollar* |
 
 ### 🎯 **Ventajas de esta Organización:**
@@ -276,7 +276,37 @@ Este proyecto es de uso personal y educativo.
 
 ---
 
-## 🏆 Reflexiones del Desarrollo
+## 📚 Detalles de las Prácticas Implementadas
+
+### � **Práctica 1 - Perfil Personal Básico** ✅
+- **Objetivo:** Crear un perfil personal con secciones básicas
+- **Implementación:** Header, Avatar, Información de contacto, Sobre mí
+- **Tecnologías:** React Native, StyleSheet, SafeAreaView
+- **Fecha:** 15 de octubre de 2025
+- **Rama:** `practica-1`
+
+### 🎯 **Práctica 2 - Componente Card Reutilizable** ✅
+- **Objetivo:** Crear un componente reutilizable con TypeScript
+- **Implementación:** 
+  - Componente `Card.tsx` con interface `CardProps`
+  - **3 variantes:** default, featured, compact
+  - Props tipadas con TypeScript
+  - Estilos nativos condicionales según variante
+- **Características:**
+  - 📱 **Variante Default:** Fondo blanco, sombras sutiles, botón azul
+  - ⭐ **Variante Featured:** Fondo morado, badge destacado amarillo
+  - ⚙️ **Variante Compact:** Layout horizontal compacto
+- **Tecnologías:** TypeScript interfaces, renderizado condicional, StyleSheet
+- **Fecha:** 16 de octubre de 2025
+- **Rama:** `practica-2`
+
+### 🎯 **Práctica 3 - Por Definir** 🚧
+- **Estado:** Pendiente de implementación
+- **Rama:** `practica-3` (por crear)
+
+---
+
+## �🏆 Reflexiones del Desarrollo
 
 Este proyecto representó una excelente oportunidad para:
 - Aprender React Native y Expo
@@ -284,8 +314,15 @@ Este proyecto representó una excelente oportunidad para:
 - Resolver problemas técnicos complejos
 - Tomar decisiones arquitectónicas importantes
 - Documentar el proceso de desarrollo
+- Implementar componentes reutilizables con interfaces TypeScript
+- Crear documentación técnica profesional
 
 La **migración de NativeWind a StyleSheet nativo** fue una decisión que, aunque requirió trabajo adicional, resultó en una aplicación más estable, performante y mantenible.
+
+### 📈 **Progreso del Aprendizaje:**
+- ✅ **Práctica 1:** Fundamentos de React Native y diseño de interfaces
+- ✅ **Práctica 2:** Componentes reutilizables y TypeScript avanzado
+- 🚧 **Práctica 3:** Por definir según requerimientos del curso
 
 ---
 
