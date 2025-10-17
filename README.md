@@ -29,7 +29,7 @@ Este repositorio está organizado en **ramas separadas** para cada práctica del
 | **`main`** | 🏠 Proyecto principal completo con todas las funcionalidades | ✅ **Completo** | [Ver rama main](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/main) |
 | **`practica-1`** | 📱 Perfil personal básico (Header + Avatar + Contacto + Sobre Mí) | ✅ **Entregado** | [Ver práctica 1](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/practica-1) |
 | **`practica-2`** | 🔄 Componente Card reutilizable con TypeScript y 3 variantes | ✅ **Entregado** | [Ver práctica 2](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/practica-2) |
-| **`practica-3`** | 🎯 Tercera práctica del curso | 🚧 **Pendiente** | *Por desarrollar* |
+| **`practica-3`** | 👥 Lista de contactos con búsqueda en tiempo real (TypeScript + useState) | ✅ **Entregado** | [Ver práctica 3](https://github.com/MiguelLopez140807/bc-reactnative-semana01-proyecto/tree/practica-3) |
 
 ### 🎯 **Ventajas de esta Organización:**
 
